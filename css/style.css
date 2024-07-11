@@ -136,10 +136,10 @@ a:focus {
 
 
 .navbar-brand img {
-  width: 25px;
-  margin-right: 7px;
+  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+  height: auto; /* Mantendrá su proporción */
+  display: block; /* Elimina el espacio en línea en el contenedor */
 }
-
 
 .custom_nav-container .nav_search-btn {
   background-image: url(../images/search-icon.png);
@@ -158,9 +158,11 @@ a:focus {
 }
 
 .navbar-brand span {
-  font-size: 22px;
-  font-weight: 700;
-  color: #fefefe;
+  display: flex;
+  width: 90%; /* Ajusta el tamaño según tus necesidades */
+  height: 90%; /* Asegúrate de que el contenedor sea cuadrado */
+  border-radius: 25%; /* Hace que el contenedor sea redondo */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
 }
 
 .custom_nav-container {
@@ -279,6 +281,12 @@ a:focus {
   background-color: #6ebca8;
   color: #fefeff;
 }
+
+.why_img-container img {
+  width: 60%; /* La imagen será el 50% del ancho del contenedor */
+  height: 60%; /* La imagen será el 50% de la altura del contenedor */
+}
+
 
 /* end why section */
 
