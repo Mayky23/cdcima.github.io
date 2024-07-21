@@ -34,8 +34,6 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.hero_section .call_to-btn {}
-
 .call_to-btn img {
   width: 18px;
   margin-left: 10px;
@@ -160,10 +158,25 @@ a:focus {
 
 .navbar-brand span {
   display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
   width: 90%; /* Ajusta el tamaño según tus necesidades */
   height: 90%; /* Asegúrate de que el contenedor sea cuadrado */
   border-radius: 25%; /* Hace que el contenedor sea redondo */
   overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+}
+
+.navbar-brand span img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+  border-radius: 25%; /* Hace que la imagen sea redonda */
+}
+
+.texto_empresa{
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+  padding: 10px; /* Agrega un poco de espacio alrededor del texto */
+  border-radius: 25%; /* Hace que el fondo del texto sea redondo */
 }
 
 .custom_nav-container {
@@ -190,6 +203,7 @@ a:focus {
   padding: 20px;
   height: 100vh;
   flex: 1;
+  border: 1px solid red;
 }
 
 .image-grid {
@@ -197,7 +211,6 @@ a:focus {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   padding: 10px;
-  border: 1px solid red;
 }
 
 .image-grid img {
@@ -274,17 +287,6 @@ a:focus {
   width: 100%;
 }
 
-
-/* end common style */
-
-/* about section */
-.about_section {
-  border: 1px solid red;
-}
-
-/* end about section */
-
-
 /* admission section */
 
 .admission_section a {
@@ -294,11 +296,16 @@ a:focus {
 
 /* end admission section */
 
-/* why section */
+/* about section */
 
-.why_section {
-  text-align: right;
+.about_detail-box{
+  text-align: left;
 }
+
+/* end about section */
+
+
+/* why section */
 
 .why_section a {
   background-color: #00a6ff;
