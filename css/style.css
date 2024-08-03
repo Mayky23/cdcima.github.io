@@ -28,8 +28,8 @@ body {
   padding: 15px 45px;
   border-radius: 10px;
   font-size: 15px;
-  background-color: #ffffff;
-  color: #262627;
+  background-color: #00a6ff;
+  color: white;
   font-weight: 600;
   transition: all 0.3s ease 0s;
 }
@@ -76,7 +76,6 @@ nav.navbar.navbar-expand-lg {
   color: #f7f6f7;
   text-align: center;
 }
-
 
 a,
 a:hover,
@@ -125,7 +124,7 @@ a:focus {
   height: 75px;
   bottom: 20%;
   left: 6%;
-  background-color: #fdd31d;
+  background-color: white;
 }
 
 
@@ -203,7 +202,6 @@ a:focus {
   padding: 20px;
   height: 100vh;
   flex: 1;
-  border: 1px solid red;
 }
 
 .image-grid {
