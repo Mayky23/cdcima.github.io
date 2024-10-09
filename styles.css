@@ -6,27 +6,39 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    background-image: url(images/fondo.jpg);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #7b7b7b;
     padding: 10px;
+}
+
+header li{
+    padding: 20px;
+    font-size: 100px;
 }
 
 header .logo img {
     height: 200px; /* Aumentamos el tamaño del logo */
     border-radius: 20%; /* Bordes redondeados para hacer un círculo perfecto */
-    border: 3px solid #333; /* Opcional: Añadir un borde */
+    border: 3px solid #7b7b7b; /* Opcional: Añadir un borde */
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center; /* Centra el contenido dentro del nav */
 }
 
 nav ul {
     list-style: none;
-    display: flex;
+    display: inline-flex; /* Cambia el ul a un contenedor en línea */
+    padding: 0;
 }
 
 nav ul li {
@@ -48,47 +60,61 @@ main {
 }
 
 section {
-    display: flex;
-    margin-bottom: 30px;
-    align-items: center;
+    max-width: 800px; /* Máximo ancho de la sección */
+    margin: 30px auto; /* Centra la sección y agrega margen en la parte inferior */
+    background-color: rgb(236, 236, 236); /* Color de fondo */
+    padding: 10px; /* Ajusta el padding para que haya espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro de la sección */
 }
 
 section img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    margin-right: 20px;
+    width: 300px; /* Ancho fijo de la imagen */
+    height: 300px; /* Alto fijo de la imagen */
+    object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
 }
 
 section .info {
-    max-width: 500px;
+    display: flex; /* Aplicar flex solo a los elementos internos */
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    align-items: center; /* Centrar los elementos dentro del contenedor */
+    max-width: 500px; /* Limitar el ancho del contenido */
+    margin: 0 auto; /* Centra el contenedor interno */
 }
 
 section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 24px; /* Tamaño de fuente del encabezado */
+    margin-bottom: 10px; /* Margen inferior */
 }
 
 section p {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Margen inferior del párrafo */
 }
 
 section button {
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px; /* Añade bordes redondeados */
+    padding: 15px 25px; /* Aumentar el padding para que los botones sean más grandes */
+    background-color: #333; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de mano */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 20px; /* Tamaño de la fuente del botón */
+    width: 200px; /* Ancho del botón */
+    height: 50px; /* Alto del botón */
+    align-self: center; /* Centra el botón dentro de su contenedor */
 }
 
 section button:hover {
-    background-color: #f0a500;
+    background-color: #f0a500; /* Color de fondo al hacer hover */
     border-radius: 10px; /* Mantiene los bordes redondeados al hacer hover */
 }
 
+
+
+
 footer {
-    background-color: #333;
+    background-color: #7b7b7b;
     color: white;
     text-align: center;
     padding: 10px 0;
