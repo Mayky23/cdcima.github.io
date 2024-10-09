@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7b7b7b;
+    background-color: #0065d8;
     padding: 10px;
 }
 
@@ -27,7 +27,7 @@ header li{
 header .logo img {
     height: 200px; /* Aumentamos el tamaño del logo */
     border-radius: 20%; /* Bordes redondeados para hacer un círculo perfecto */
-    border: 3px solid #7b7b7b; /* Opcional: Añadir un borde */
+    border: 3px solid #0065d8; /* Opcional: Añadir un borde */
 }
 
 nav {
@@ -52,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f0a500;
+    color: rgb(255, 247, 0);
 }
 
 main {
@@ -94,7 +94,7 @@ section p {
 
 section button {
     padding: 15px 25px; /* Aumentar el padding para que los botones sean más grandes */
-    background-color: #333; /* Color de fondo del botón */
+    background-color: #0065d8; /* Color de fondo del botón */
     color: white; /* Color del texto del botón */
     border: none; /* Sin borde */
     cursor: pointer; /* Cursor de mano */
@@ -106,15 +106,13 @@ section button {
 }
 
 section button:hover {
-    background-color: #f0a500; /* Color de fondo al hacer hover */
+    background-color: rgb(255, 247, 0); /* Color de fondo al hacer hover */
     border-radius: 10px; /* Mantiene los bordes redondeados al hacer hover */
+    color: black;
 }
 
-
-
-
 footer {
-    background-color: #7b7b7b;
+    background-color: #0065d8;
     color: white;
     text-align: center;
     padding: 10px 0;
