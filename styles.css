@@ -120,3 +120,22 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .contact-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
