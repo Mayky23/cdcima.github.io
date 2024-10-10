@@ -1,0 +1,173 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-image: url(images/fondo.jpg);
+    width: 100%; /* Asegura que el body ocupe todo el ancho */
+}
+
+/* Asegura que el header ocupe todo el ancho de la pantalla */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0065d8;
+    padding: 10px;
+    width: 100%; /* Asegura que el header ocupe el 100% del ancho */
+    position: relative; /* Para asegurar que se mantenga en la parte superior */
+}
+
+/* Ajustes de estilo para el logo */
+header .logo img {
+    height: 200px; /* Aumentamos el tamaño del logo */
+    border-radius: 20%; /* Bordes redondeados para hacer un círculo perfecto */
+    border: 3px solid #0065d8; /* Opcional: Añadir un borde */
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center; /* Centra el contenido dentro del nav */
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex; /* Cambia el ul a un contenedor en línea */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 247, 0);
+}
+
+main {
+    padding: 20px;
+    width: 100%; /* Asegura que el main ocupe el 100% del ancho */
+}
+
+/* Ajustes de sección */
+section {
+    margin: 30px 40px; /* Margen vertical de 30px y horizontal de 40px */
+    background-color: rgb(236, 236, 236); /* Color de fondo */
+    border-radius: 20px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+/* Sección de la información de contacto */
+.contact-section {
+    color: white;
+}
+
+/* Sección del encabezado */
+.contact-header {
+    background-color: #1e1e1e;
+    padding: 60px 20px;
+}
+
+.contact-header h1 {
+    font-size: 3rem;
+    color: #f0a500;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 40px;
+}
+
+/* Sección de la información de contacto */
+.contact-info {
+    background-color: white;
+    padding: 30px;
+    margin: 15px 40px; /* Añadir margen vertical y horizontal */
+    width: calc(100% - 80px); /* Ajustar el ancho restando el margen horizontal */
+    display: flex; /* Asegura que los elementos se alineen en fila */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
+    border-radius: 20px;
+}
+
+.contact-item {
+    flex: 1 1 30%; /* Proporción de espacio, mínimo 30% */
+    text-align: center;
+    margin: 10px; /* Reduce el margen para asegurar que quepan en la fila */
+}
+
+.contact-item img {
+    width: 50px; /* Ajustar el tamaño de las imágenes */
+    height: auto; /* Mantener la relación de aspecto */
+}
+
+.contact-item h3 {
+    font-size: 1.3rem;
+    color: #f0a500;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Sección del mapa */
+.map-container {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Asegura que el contenedor del mapa ocupe el 100% del ancho */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    margin: 10px;
+    margin-left: 10px;
+}
+
+/* Ajustes del footer */
+footer {
+    background-color: #0065d8;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Cambia a 'fixed' para anclarlo en la parte inferior */
+    bottom: 0; /* Asegura que esté en la parte inferior de la página */
+    left: 0; /* Asegura que esté alineado a la izquierda */
+    width: 100%; /* Asegura que el footer ocupe el 100% del ancho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        padding: 20px;
+        width: 90%; /* Ajusta el ancho en dispositivos más pequeños */
+    }
+
+    .contact-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
+

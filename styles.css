@@ -111,16 +111,18 @@ section button:hover {
     color: black;
 }
 
+/* Ajustes del footer */
 footer {
     background-color: #0065d8;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    position: fixed; /* Cambia a 'fixed' para anclarlo en la parte inferior */
+    bottom: 0; /* Asegura que esté en la parte inferior de la página */
+    left: 0; /* Asegura que esté alineado a la izquierda */
+    width: 100%; /* Asegura que el footer ocupe el 100% del ancho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
-
 
 /* Responsividad */
 @media (max-width: 768px) {
